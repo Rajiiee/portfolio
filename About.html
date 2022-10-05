@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Page</title>
+    <link rel="stylesheet" href="css\about.css">
+    <script
+      src="https://kit.fontawesome.com/fd87cafac2.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label for="" class="logo"
+        >Port<span style="color: rgb(174, 169, 169)">folio</span></label
+      >
+      <ul>
+        <li><a href="intro.html">Home</a></li>
+        <li><a class="active" href="About.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div class="about1">About Me _____</div>
+        <div class="container">
+            <div class="box1">
+                <img src="images\self.jpg" alt="Profile picture">
+            </div>
+            <div class="box2">
+             <p id="box"></p>  
+            </div>
+        </div>
+
+</main>
+<footer class="flex-all-center">
+      <p class="text-center">Copyright &copy; RajiGupta</p>
+    </footer>
+<script>
+    var i = 0;
+var txt = ["Hi There! I am Raji Gupta.<br>I am from Jhansi, UP. I am a IInd year student at Ajay Kumar Garg Engineering College (AKGEC),Ghaziabad;<br>Persuing B.Tech with specialization in Information Techology.<br>I am a curious learner ,who always ready to explore dimensions around me.<br>I love to cook and try new food stuff."];
+var speed = 70;
+function typeWritter() {
+  document.querySelector("#box").style.color = "white";
+  document.querySelector("#box").style.fontFamily =  "serif";
+  document.querySelector("#box").innerHTML =
+    txt[0].substring(0, i) + "<span>\u25ae</span>";
+  if (i++ != txt[0].length) {
+    setTimeout(typeWritter, speed);
+  }
+}
+window.addEventListener("load", typeWritter);
+
+</script>
+</body>
+</html>

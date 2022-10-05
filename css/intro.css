@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    background-image: url("https://img.freepik.com/premium-vector/futuristic-abstract-vector-background-blockchain-technology-peer-peer-network-business-concept-gl_230610-927.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    /* background-color: white; */
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: rgb(174, 169, 169);
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(115, 112, 112);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;}
+        
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        
+        nav ul li a {
+            font-size: 20px;
+        }
+        
+        a:hover,
+        a.active {
+            background: none;
+            color: white;
+        }
+        
+        #check:checked~ul {
+            left: 0;
+        }
+        }
+        
+        main {
+            width: 100%;
+            height: 81vh;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .img {
+            display: flex;
+            width: 27vw;
+            padding: 7%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .img img {
+            background-size: contain;
+            overflow: hidden;
+            width: 20vw;
+            border-radius: 120px;
+        }
+        
+        .typed-strings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70vw;
+            height: 93vh;
+        }
+        
+        .typed-strings p {
+            font-size: 70px;
+        }
+        
+        main div p {
+            color: black;
+            font-size: 10vw;
+        }
+        
+        #type {
+            /* display: flex;
+          justify-content: center;
+          align-items: center; */
+            padding: 0px 50px;
+            font-size: 40px;
+        }
+        
+        .flex-all-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer {
+            height: 12vh;
+            color: black;
+            font-family: "Lato", sans-serif;
+            }

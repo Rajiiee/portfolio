@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+nav {
+    /* background-color: white; */
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: rgb(174, 169, 169);
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(115, 112, 112);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        z-index: 2;
+    }
+}
+main{
+    margin-top: 7vh;
+}
+.timeline{
+   position:relative;
+   max-width: 1200px;
+   margin:0px 0px; 
+}
+.timeline::after{
+    content:'';
+    position:absolute;
+    width:6px;
+    background-color: blanchedalmond;
+    top:0px;
+    bottom:0;
+    left: 62.5%;
+    margin-left: -3px;
+}
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width:50%;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right:-17px;
+    background-color:whitesmoke;
+    border:4px solid dimgrey;
+    border-radius: 50%;
+    top:15px;
+    z-index:1;
+}
+.left{
+    left:6%;
+}
+.right{
+    left:63%;
+}
+.left::before{
+    content:"";
+    height: 0;
+    position: absolute;
+    top:22px;
+    width:0;
+    z-index:1;
+    right:30px;
+    border:medium solid white;
+    border-width: 10px 0px 10px 10px;
+    border-color: transparent transparent transparent white; 
+}
+.right::before {
+    content:"";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0px;
+    border-color: transparent white transparent transparent;
+}
+.right::after{
+    left:-16px;
+}
+.content{
+    padding: 20px 30px;
+    background-color:white;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Alkalami', serif;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 12vh;
+    color: white;
+    font-family: "Lato", sans-serif;
+}

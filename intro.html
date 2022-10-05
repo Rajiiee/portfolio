@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css\intro.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/fd87cafac2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label for="" class="logo"
+        >Port<span style="color: rgb(174, 169, 169)">folio</span></label
+      >
+      <ul>
+        <li><a class="active" href="intro.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="img">
+        <img src="images\illus.jpg" alt="" />
+      </div>
+      <div class="typed-strings">
+        <p>I am<strong> Raji</strong></p>
+        <p id="type"></p>
+      </div>
+    </main>
+    <footer class="flex-all-center">
+      <p class="text-center">Copyright &copy; RajiGupta</p>
+    </footer>
+    <script>
+      var i = 0;
+      var txt = ["A Student, Coder and Developer."];
+      var speed = 100;
+      function typeWriter() {
+        document.querySelector("#type").style.color = "black";
+        document.querySelector("#type").innerHTML =
+          txt[0].substring(0, i) + "<span>\u25ae</span>";
+        if (i++ != txt[0].length) {
+          setTimeout(typeWriter, speed);
+        }
+      }
+      window.addEventListener("load", typeWriter);
+    </script>
+  </body>
+</html

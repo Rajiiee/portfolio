@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    /* background-color: white; */
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: rgb(174, 169, 169);
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(115, 112, 112);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        z-index: 2;
+    }
+}
+main {
+    display: inline-block;
+    margin-top: 7vh;
+    width: 100vw;
+    height: 90vh;
+}
+.container{
+    margin:0px 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:white;
+    font-size: larger
+    ;
+}
+.icon1{
+    display: flex; 
+    width:30vw;
+    height:50vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bolder;
+} 
+.icon1 img{
+    width: 120px;
+    height: 120px;
+    margin:20px;
+}
+.icon2{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.icon2 img {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+.icon3{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+} 
+.icon3 img {
+    width: 120px;
+    height: 120px;
+    margin:30px 20px 20px 20px;
+}.icon4 {
+    display: flex;
+    width: 45vw;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.icon4 img {
+    width: 200px;
+    height:120px;
+    margin: 20px;
+}
+.icon5 {
+    display: flex;
+    width: 45vw;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.icon5 img {
+    width: 200px;
+    height: 120px;
+    margin: 20px;
+}
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 12vh;
+    color: white;
+    font-family: "Lato", sans-serif;
+}

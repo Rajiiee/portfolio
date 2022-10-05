@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: black;
+}
+nav {
+    /* background-color: white; */
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: rgb(174, 169, 169);
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(115, 112, 112);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        z-index: 2;
+    }
+}
+.about1{
+    height: 9vh;
+    color: grey;
+    padding: 30px 0px 0px 130px;
+    font-size: 50px;
+
+}
+
+main{
+    display: inline-block;
+    margin-top: 7vh;
+    width: 100vw;
+    height: 90vh;
+}
+main div{
+    display: block;
+}
+.container{
+    display: flex;
+}
+.box1{
+    height:84vh;
+    width: 50vw;
+}
+.box1 img{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    width: 20em;
+    padding: 25px 10px 25px 136px;
+}
+.box2{
+    display: inline-flex;
+    justify-content: flex-start;
+    height: 84vh;
+    width: 50vw;
+    padding: 25px 20px;
+    font-size: 30px;
+}
+#box{
+    font-family: 'Abyssinica', serif;
+    line-height: 1.2;
+
+}
+span{
+    animation: blinker 1s linear infinte;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 12vh;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
