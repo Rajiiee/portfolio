@@ -8,13 +8,23 @@
     box-sizing: border-box;
 }
 
-body {
-    max-height: 100vh;
-    background-image: url("https://img.freepik.com/premium-vector/futuristic-abstract-vector-background-blockchain-technology-peer-peer-network-business-concept-gl_230610-927.jpg?w=2000");
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (min-width:858px) {
+    body {
+        background-image: url("https://img.freepik.com/premium-vector/futuristic-abstract-vector-background-blockchain-technology-peer-peer-network-business-concept-gl_230610-927.jpg?w=2000");
+        max-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
+@media screen and (max-width:858px) {
+    body {
+        background-image: linear-gradient(gray, white);
+        max-height: 100vh;
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+    }
+}
 nav {
     /* background-color: white; */
     height: 80px;
@@ -49,7 +59,7 @@ nav ul li a {
 }
 
 a.active,
-a:hover {
+.in:hover {
     background: rgb(174, 169, 169);
     transition: 0.5s;
 }
@@ -117,14 +127,8 @@ a:hover {
 }
 main {
     display: inline-block;
-    margin-top: 7vh;
     width: 100vw;
     height: 90vh;
-}
-.contact{
-    color:gray;
-    font-size:100px;
-    font-weight: bolder;
 }
 .content1{
     display: flex;
@@ -135,22 +139,89 @@ main {
 
 }
 .content1 img{
-    height:70px;
+    height:45px;
     border:1px solid transparent;
     border-radius:60%;
 
 }
 .head1{
-    width:40vw;
+    width:30vw;
     color:black;
-    font-size: 70px;
+    font-size: 40px;
     font-weight:bold;
     font-family:'Abyssinica', serif;
+
 }
 .head2 img{
     height:90px;
 }
-
+.fas{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.icon{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: rgb(11, 11, 68);
+    margin-top:12px;
+    padding:0px 25px 0px 25px;
+}
+.icon i{
+    margin:10px;
+    /* height: 20vh; */
+}
+.icon:hover{
+    cursor:pointer;
+    transform:scaleX(-1);
+    color:rgb(104, 102, 102);
+    transition-duration: .5s;
+}
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.icon
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-control input,
+.form-control select,
+#comment {
+    border: 2px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+button {
+    background-color: gray;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: rgb(23, 66, 66);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transform: translate(-5px);
+}
 .flex-all-center {
     display: flex;
     justify-content: center;

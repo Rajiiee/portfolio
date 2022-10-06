@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css\contact.css" />
     <link rel="stylesheet" href="css\res.css" />
@@ -19,30 +21,74 @@
       <label for="" class="logo"
         >Port<span style="color: rgb(174, 169, 169)">folio</span></label
       >
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="edu.html">Education</a></li>
+      <ul >
+        <li><a class="in" href="index.html">Home</a></li>
+        <li><a class="in"href="About.html">About</a></li>
+        <li><a class="in"href="skills.html">Skills</a></li>
+        <li><a class="in"href="edu.html">Education</a></li>
         <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <div class="contact">CONTACT ______</div>
       <div class="container">
         <div class="content1">
           <img src="images\broken-link.png" />
           <div class="head1">Social Profiles</div>
         </div>
-        <div class="head2">
-          <img src="images\gmail.png" />
-          <img src="images\linkedin.png" />
-          <img src="images\instagram.png" />
-        </div>
+        <div class="fas">
+          <a
+            class="icon"
+            href="https://www.linkedin.com/in/raji-gupta-067496252/"
+          >
+            <i class="fa-brands fa-linkedin fa-4x fa-display"> </i
+          ></a>
+          <a class="icon" href="https://www.instagram.com/_rajiiee_">
+            <i class="fa-brands fa-instagram fa-4x"></i>
+          </a>
+          <a class="icon" href="https://github.com/Rajiiee">
+            <i class="fa-brands fa-github fa-4x"> </i>
+          </a>
+          <a class="icon" href="mailto:raji2113014@akgec.ac.in">
+            <i class="fa-solid fa-envelope fa-4x"> </i>
+          </a>
+          <a class="icon" href="https://www.hackerrank.com/raji2113014?hr_r=1">
+            <i class="fa-brands fa-hackerrank fa-4x"> </i>
+          </a>
+          </div>
       </div>
+         <form id="form">
+              <div class="form-control">
+                   <label for="name" id="label-name"><br>
+                        Name
+                   </label>
+                   <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+              </div>
+              <div class="form-control">
+                   <label for="email" id="label-email">
+                           Email
+                   </label>
+                   <input type="email"
+                    id="email"
+                   placeholder="Enter your email" />        
+              </div><br>
+              <textarea name="comment" id="comment" placeholder="Leave Message"></textarea>
+            </textarea>
+        </div>
+        <button type="submit" value="submit">
+                  Submit
+        </button>
+    </form>
     </main>
     <footer class="flex-all-center">
-      <p class="text-center">Copyright &copy; RajiGupta</p>
+      <p class="text-center">Copyright &copy; Rajiiee</p>
     </footer>
+    <script>
+      document.querySelector("button").addEventListener("click",handleClick);
+      function handleClick(){
+        alert("Thankyou for your feedback!!");
+      }
+    </script>
   </body>
 </html>

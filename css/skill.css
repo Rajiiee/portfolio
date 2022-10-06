@@ -114,12 +114,12 @@ a:hover {
 }
 main {
     display: inline-block;
-    margin-top: 7vh;
     width: 100vw;
-    height: 90vh;
+    height: 79vh;
 }
+@media screen and (min-width:858px) {
 .container{
-    margin:0px 5vw;
+    margin:5vh 5vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -127,14 +127,12 @@ main {
     font-size: larger
     ;
 }
+}
 .icon1{
-    display: flex; 
+    display: block; 
     width:30vw;
-    height:50vh;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    font-weight: bolder;
+    height:30vh;
+    text-align: center;
 } 
 .icon1 img{
     width: 120px;
@@ -142,12 +140,10 @@ main {
     margin:20px;
 }
 .icon2{
+    display:block;
     width: 30vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+    height: 30vh;
+    text-align: center;
 }
 .icon2 img {
     width: 120px;
@@ -156,23 +152,19 @@ main {
 }
 .icon3{
     width: 30vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+    height: 30vh;
+    display: block;
+    text-align: center;
 } 
 .icon3 img {
     width: 120px;
     height: 120px;
     margin:30px 20px 20px 20px;
 }.icon4 {
-    display: flex;
+    display: block;
     width: 45vw;
     height: 45vh;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+    text-align: center;
 }
 .icon4 img {
     width: 200px;
@@ -180,26 +172,46 @@ main {
     margin: 20px;
 }
 .icon5 {
-    display: flex;
-    width: 45vw;
+    display:block;
+    width: 40vw;
     height: 45vh;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-}
+    text-align: center;
+    }
 .icon5 img {
     width: 200px;
     height: 120px;
     margin: 20px;
 }
-.flex-all-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width:858px) {
+    .container {
+        margin: 5vh 5vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: white;
+        font-size: larger;
+        justify-content: center;
+    }
+    .icon{
+        width: 100%;
+    }
 }
-
+@media screen and (width:280px)
+{
+    label.logo{
+        padding:25px;
+    }
+}
 footer {
-    height: 12vh;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
     color: white;
     font-family: "Lato", sans-serif;
+}
+footer p{
+    margin-top:20px;
 }

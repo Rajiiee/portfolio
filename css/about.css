@@ -109,24 +109,8 @@ a:hover {
         z-index: 2;
     }
 }
-.about1{
-    height: 9vh;
-    color: grey;
-    padding: 30px 0px 0px 130px;
-    font-size: 50px;
-
-}
-
-main{
-    display: inline-block;
-    margin-top: 7vh;
-    width: 100vw;
-    height: 90vh;
-}
-main div{
-    display: block;
-}
-.container{
+@media screen and (min-width:858px) {
+    .container{
     display: flex;
 }
 .box1{
@@ -139,7 +123,7 @@ main div{
     align-items: center;
     height: auto;
     width: 20em;
-    padding: 25px 10px 25px 136px;
+    padding: 25px 10px 25px 100px;
 }
 .box2{
     display: inline-flex;
@@ -149,6 +133,53 @@ main div{
     padding: 25px 20px;
     font-size: 30px;
 }
+}
+@media screen and (max-width:858px) {
+    .container {
+        display: block;
+    }
+
+    .box1 {
+        height: 50vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .box1 img {
+        height:45vh;
+        width: auto;
+        padding:0vh 5vw 0vh 5vw;
+    }
+
+    .box2 {
+        display: inline-flex;
+        justify-content:center;
+        box-sizing: border-box;
+        height: 50vh;
+        width: 100vw;
+        padding: 25px 20px;
+        font-size: 25px;
+        word-wrap: wrap;
+    }
+}
+
+.about1{
+    height: 9vh;
+    color: grey;
+    padding: 20px 0px 0px 20px;
+    font-size: 50px;
+
+}
+
+main{
+    display: inline-block;
+    width: 100vw;
+    height: 90vh;
+}
+main div{
+    display: block;
+}
+
 #box{
     font-family: 'Abyssinica', serif;
     line-height: 1.2;
@@ -162,14 +193,20 @@ span{
         opacity: 0;
     }
 }
-.flex-all-center {
-    display: flex;
+@media screen and (width:280px) {
+    label.logo {
+        padding: 25px;
+    }
+}
+footer {
+    display: block;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    height: 12vh;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 8vh;
+    text-align: center;
     color: white;
     font-family: "Lato", sans-serif;
 }

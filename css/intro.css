@@ -8,12 +8,107 @@
     box-sizing: border-box;
 }
 
-body {
-    max-height: 100vh;
-    background-image: url("https://img.freepik.com/premium-vector/futuristic-abstract-vector-background-blockchain-technology-peer-peer-network-business-concept-gl_230610-927.jpg?w=2000");
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (min-width:858px) {
+    body {
+        background-image: url("https://img.freepik.com/premium-vector/futuristic-abstract-vector-background-blockchain-technology-peer-peer-network-business-concept-gl_230610-927.jpg?w=2000");
+        max-height: 100vh;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+        main {
+            width: 100%;
+            height: 81vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .img {
+            display: flex;
+            width: 27vw;
+            padding: 3%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        .img img {
+            background-size: contain;
+            overflow: hidden;
+            width: 20vw;
+            border-radius: 120px;
+        }
+    
+        .typed-strings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70vw;
+            height: 93vh;
+        }
+        .typed-strings p {
+            font-size: 70px;
+        }
+        main div p {
+                    color: black;
+                    font-size: 10vw;
+        }
+        
+        #type {
+                    padding: 0px 154px;
+                    font-size: 40px;
+        }
 }
+@media screen and (max-width:858px){
+    body {
+            background-image:linear-gradient(gray 60%,white);
+            max-height: 100vh;
+            background-size:cover;
+            /* background-repeat: no-repeat; */
+        }
+        main {
+            width: 100%;
+            height: 81vh;
+            display: flex;
+            flex-direction: column;
+        }
+    .img {
+                    display: flex;
+                    width: 100vw;
+                    margin-top:50px;
+                    justify-content: center;
+                    align-items: center;
+                    height:90vh;
+                }
+        
+    .img img {
+                    background-size: contain;
+                    overflow: hidden;
+                    height:32vh;
+                    border-radius: 120px;
+                }
+        
+    .typed-strings {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100vw;
+                    height: 93vh;
+                }
+    .typed-strings p {
+            font-size: 66px;
+        }
+    main div p {
+    color: black;
+    font-size: 10vw;
+    }
+
+    #type {
+    padding: 0px 30px 0px 30px;
+    font-size: 40px;
+    }
+}
+
+
 
 nav {
     /* background-color: white; */
@@ -68,7 +163,7 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 952px) {
+@media screen and (max-width: 952px) {
     label.logo {
         font-size: 30px;
         padding-left: 50px;
@@ -79,7 +174,7 @@ a:hover {
     }
 }
 
-@media (max-width: 858px) {
+@media screen and (max-width:858px) {
     .checkbtn {
         display: block;
     }
@@ -113,64 +208,22 @@ a:hover {
         #check:checked~ul {
             left: 0;
         }
-        }
-        
-        main {
-            width: 100%;
-            height: 81vh;
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .img {
-            display: flex;
-            width: 27vw;
-            padding: 7%;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        
-        .img img {
-            background-size: contain;
-            overflow: hidden;
-            width: 20vw;
-            border-radius: 120px;
-        }
-        
-        .typed-strings {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 70vw;
-            height: 93vh;
-        }
-        
-        .typed-strings p {
-            font-size: 70px;
-        }
-        
-        main div p {
-            color: black;
-            font-size: 10vw;
-        }
-        
-        #type {
-            /* display: flex;
-          justify-content: center;
-          align-items: center; */
-            padding: 0px 50px;
-            font-size: 40px;
-        }
+    }
         
         .flex-all-center {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+@media screen and (width:280px) {
+    label.logo {
+        padding: 25px;
+    }
+}
         
         footer {
             height: 12vh;
             color: black;
             font-family: "Lato", sans-serif;
-            }
+        }
+
